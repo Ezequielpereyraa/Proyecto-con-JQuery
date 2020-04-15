@@ -1,0 +1,172 @@
+$green-background : #235E3D;
+$gray-backgound: #333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ccc,
+        -2px -2px 5px #ccc;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url(/img/fondoNatural.jpg);
+    background-size: cover;
+}
+
+#header {  
+    h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        background-color:$color-background ;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 5px;
+        display: inline-block;
+        text-align: center;
+        height: 75px;
+        line-height: 73px;
+    }
+    input {
+        background-color: #ccc;
+        width: 200px;
+        height: 40px;
+    }
+}
+
+#menu {
+    list-style: none;
+    margin-bottom: 20px;
+    ul {
+        margin-top: 20px;
+        background-color: $gray-backgound;
+        height: 50px;
+    }
+    li {
+        list-style: none;
+        transition: all 300ms;
+        display: inline-block;
+        margin: 0 20px;
+        &:hover {
+            background-color: $color-background;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 50px;
+    }
+}
+
+#content{
+    display: grid; 
+    grid-template-columns: 70% 30%;;
+    .post{
+        padding: 10px;
+        margin: 18px 0px;
+        box-shadow: 4px 4px 5px gray,
+       - 4px -4px 5px gray;;
+        h2{
+            font-family: 'Helvetica';
+            font-style: italic;
+            font-weight: bold;
+            font-size: 29px;
+            color: $gray-backgound;
+        }
+        span{
+            color: gray;
+            display: block;
+            margin: 5px 0px
+        }
+        p{
+            margin: 10px 0px;
+            line-height: 22px;;
+            text-align: justify;
+        }
+    }
+    .boton-leer {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        background-color: $color-background;
+        color: white;
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+        width: 100px;
+        transition: all 300ms ease-in;
+        &:hover {
+            background-color: rgb(21, 56, 36);
+        }
+    }
+    #lateral{
+        font-family: Helvetica;
+            margin-left: 54px;
+            h4{
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                color: $gray-backgound;
+                background: url(/img/lines.png);
+                span{
+                  background-color: white;
+                  color: black;
+                  padding: 4px;
+                }
+            }
+            img{
+                width: 100%;
+                margin: 10px 0px;
+            }
+            #logear{
+                text-align: center;
+                input{
+                    width: 100%;
+                    border:1px solid #ccc;
+                    margin-bottom: 10px;
+                    padding: 5px;
+                    border-radius: 8px;
+                }
+                input[type="submit"]{
+                    background-color: $gray-backgound;
+                    padding: 10px;
+                    width: 150px;
+                    cursor: pointer;
+                    color: white;
+                    &:hover{
+                        background-color: rgb(36, 35, 35);
+                    }
+                }
+            }
+        }
+    }
+    .galeria{
+        img{
+           height: 400px;
+            margin-bottom: 20px;
+        }
+    }
+
+    footer{
+        font-family: Helvetica;
+        background-color:rgb(66, 61, 61);
+        height: 55px;
+        margin: 0 auto;
+        color: #fff;
+        width: 70%;
+        font-size: 20px;
+        text-align: center;
+        line-height: 55px;
+        margin-bottom: 40px;
+    }
